@@ -1,13 +1,18 @@
 # TruePath
 
-# TruePath generates relative XPath on right click on web page. 
+# TruePath is a web extension that dynamically generates relative XPath on right click on web page and display all the XPath as menu items.
 
-Once the web page is loaded, when a user right clicks on any web element on the web
-page, it will dynamically create all the relative XPath associated with that
-web element by scanning through its attributes and display all the XPath as
-menu items. It then groups the XPath as Unique XPath or Non Unique XPath. Non Unique
-XPath means multiple nodes are present in DOM for this XPath. Using index 
-one can select the required node. Support for iframes is not available now. 
+	# For Chrome & Firefox version < 56 : It then group the XPath as follows
+  
+  1. XPath with id, href, src: This group will list all XPath which has id, href, src or any http\ https as attribute. 
+  2. XPath with class, name, title: This group will list all XPath except those containing id, href, src or any http\ https.
+  3. XPath with index: As name suggest this group will contain all indexed XPath.
+  
+  # For Firefox version > 55: It then group the XPath as follows
+  
+  1. Green thumbs up: This group will list all XPath except those containing id, href, src or any http\ https.
+  2. Yellow thumbs up: This group will list all XPath which has id, href, src or any http\ https as attribute.
+  3. Red thumbs up: This group will contain all indexed XPath.
 
 # The benefits of using this tool are:
 
