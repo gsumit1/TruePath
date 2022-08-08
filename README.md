@@ -1,6 +1,8 @@
 # TruePath
 
  TruePath is a web extension that dynamically generates relative XPath on right click on a web page and display all the XPath as menu items
+ 
+ Its now support Cypress for firefox
 
  # For Chrome & Firefox version < 56 : It then group the XPath as follows
   
